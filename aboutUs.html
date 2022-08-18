@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>aboutUs</title>
+    <link rel="stylesheet" href="aboutUs.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <nav>
+        <ul>
+          <li class="logo">
+            <img
+              class="logoImage"
+              src="https://th.bing.com/th/id/OIP.Ydf26Rg1mqjVD2z5CXyZRQHaC1?w=290&h=134&c=7&r=0&o=5&dpr=1.25&pid=1.7"
+              alt="mindtree logo"
+            />
+          </li>
+          <li class="btn"><span class="fas fa-bars"></span></li>
+          <div class="items">
+            <li class="search-icon">
+              <input type="search" placeholder="Search" />
+              <label class="icon">
+                <span class="fas fa-search"></span>
+              </label>
+            </li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="aboutUs.html">About Us</a></li>
+            <li><a class="contact" href="contact.html">Contact</a></li>
+          </div>
+        </ul>
+      </nav>
+      <div class="content">
+        <div class="left">
+          <audio style="background-color: black" controls autoplay loop>
+            <source src="songs.mpeg" type="audio/mpeg" />
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+        <div class="right">
+          <span
+            style="color: black; font-weight: bold; text-decoration: underline"
+            >ABOUT MINDTREE</span
+          >
+          <p
+            style="
+              color: black;
+              font-weight: 300;
+              letter-spacing: 1px;
+              word-spacing: 1px;
+              margin-top: 10px;
+            "
+          >
+            Mindtree [NSE: MINDTREE] is a global technology consulting and
+            services company that enables enterprises across industries to drive
+            superior competitive advantage, customer experiences and business
+            outcomes by harnessing digital and cloud technologies. A digital
+            transformation partner to approximately 275 of the world's most
+            pioneering enterprises, Mindtree brings extensive domain, technology
+            and consulting expertise to help reimagine business models.
+          </p>
+        </div>
+      </div>
+      <footer>
+        <div class="left" style="margin-top: -30px">
+          <ul class="socials" style="display: flex">
+            <li>
+              <a href="https://www.facebook.com/"
+                ><img
+                  class="footerLogo"
+                  src="https://th.bing.com/th?q=Facebook+Logo+Blue&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.25&pid=InlineBlock&mkt=en-IN&cc=IN&setlang=en&adlt=moderate&t=1&mw=247"
+                  alt="facebook"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/"
+                ><img
+                  class="footerLogo"
+                  src="https://th.bing.com/th/id/OIP.OJe7GvGHkndEWM0ytnxFCQHaHG?w=217&h=208&c=7&r=0&o=5&dpr=1.25&pid=1.7"
+                  alt="instagram"
+              /></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/"
+                ><img
+                  class="footerLogo"
+                  src="https://th.bing.com/th/id/OIP.PSj_SQum7CH01WhmY2kFcAHaHx?w=179&h=187&c=7&r=0&o=5&dpr=1.25&pid=1.7"
+                  alt="twitter"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.google.com/"
+                ><img
+                  class="footerLogo"
+                  src="https://th.bing.com/th/id/OIP.Kg2FF2wpIK_HLyo8Q56ycAHaFj?w=230&h=180&c=7&r=0&o=5&dpr=1.25&pid=1.7"
+                  alt="facebook"
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="right" style="font-size: 12px; margin-top: -40px">
+          <span>@copyRight...</span><br />
+          <p style="padding-bottom: 3px">
+            This document is the exclusive property of Mindtree Limited
+            (Mindtree); the recipient agrees that they may not copy, transmit,
+            use or disclose the confidential and proprietary information in this
+            document by any means without the expressed and written consent of
+            Mindtree. By accepting a copy, the recipient agrees to adhere to
+            these conditions to the confidentiality of Mindtree's practices and
+            procedures; and to use these documents solely for responding to
+            Mindtree's operations methodology.
+          </p>
+        </div>
+      </footer>
+    </div>
+    <script>
+      $("nav ul li.btn span").click(function () {
+        $("nav ul div.items").toggleClass("show");
+        $("nav ul li.btn span").toggleClass("show");
+      });
+    </script>
+  </body>
+</html>

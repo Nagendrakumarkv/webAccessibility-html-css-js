@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>contact</title>
+    <link rel="stylesheet" href="contact.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="validateForm.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div class="main">
+      <nav>
+        <ul>
+          <li class="logo">
+            <img
+              class="logoImage"
+              src="https://th.bing.com/th/id/OIP.Ydf26Rg1mqjVD2z5CXyZRQHaC1?w=290&h=134&c=7&r=0&o=5&dpr=1.25&pid=1.7"
+              alt="mindtree logo"
+            />
+          </li>
+          <li class="btn"><span class="fas fa-bars"></span></li>
+          <div class="items">
+            <li class="search-icon">
+              <input type="search" placeholder="Search" />
+              <label class="icon">
+                <span class="fas fa-search"></span>
+              </label>
+            </li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="aboutUs.html">About Us</a></li>
+            <li><a class="contact" href="contact.html">Contact</a></li>
+          </div>
+        </ul>
+      </nav>
+      <div class="content">
+        <div class="left">
+          <h1
+            style="
+              color: black;
+              margin-bottom: 10px;
+              text-decoration: underline;
+            "
+          >
+            CONTACT INFO
+          </h1>
+          <span style="color: black">
+            <h3 style="color: black">Mindtree Limited Contact Info</h3>
+            <span style="color: black">Nagendra Kumar K V</span> <br />
+            <b style="color: black">Email</b>:nagendr@mindtree.com<br />
+            Global Village, RVCE Post, Mysore Road, Bangalore-560 059 INDIA
+            Phone- 91 (80) 6706 4000 Fax- 91 (80) 6706 4100 Web-
+            www.mindtree.com
+          </span>
+        </div>
+        <div class="right">
+          <form name="RegForm" onsubmit="return validateForm()" method="post">
+            <div class="title">
+              <h2
+                style="
+                  color: black;
+                  margin-left: -30px;
+                  text-decoration: underline;
+                "
+              >
+                ADD YOUR INFO TO GET NOTIFICATION
+              </h2>
+            </div>
+            <div class="info" style="color: black">
+              <input
+                class="inputItem"
+                type="text"
+                name="name"
+                placeholder="Full name*"
+                area-label="enter the first name"
+                required
+              />
+              <input
+                class="inputItem"
+                type="email"
+                name="name"
+                placeholder="Email*"
+                area-label="enter the email"
+                required
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+              />
+              <input
+                class="inputItem"
+                type="number"
+                name="name"
+                placeholder="Phone number*"
+                area-label="enter the phone number"
+                required
+                pattern="[0-9]{10}"
+              />
+              <textarea
+                class="inputItem"
+                rows="10"
+                cols="10"
+                placeholder="Address*"
+                area-label="enter the address"
+                name="address"
+                required
+              ></textarea>
+              <select
+                class="inputItem"
+                name="course"
+                area-label="select the course type"
+                required
+              >
+                <option value="course-type" selected>Course type*</option>
+                <option value="Computer Science Engg">
+                  Computer Science Engg
+                </option>
+                <option value="Electrical Engg">Electrical Engg</option>
+                <option value="Mechanical Engg">Mechanical Engg</option>
+                <option value="Civil Engg">Civil Engg</option>
+                <option value="Mecotronics Engg">Mecotronics Engg</option>
+                <option value="Information technology Engg">
+                  Information technology Engg
+                </option>
+                <option value="Agriculture Engg">Agriculture Engg</option>
+              </select>
+            </div>
+            <div class="checkbox">
+              <input
+                type="checkbox"
+                class="checkbox"
+                name="checkbox"
+                style="margin-top: 20px"
+              />
+              <a
+                style="color: black; margin-bottom: 700px"
+                href="https://www.mindtree.com/about/investors/policies"
+                >I agree to the Mindtree Policies.</a
+              >
+            </div>
+            <button class="submitButton" type="submit" style="margin-top: 20px">
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+      <footer>
+        <div class="left" style="margin-top: -30px">
+          <ul class="socials" style="display: flex">
+            <li>
+              <a href="https://www.facebook.com/"
+                ><img
+                  class="footerLogo"
+                  src="https://th.bing.com/th?q=Facebook+Logo+Blue&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.25&pid=InlineBlock&mkt=en-IN&cc=IN&setlang=en&adlt=moderate&t=1&mw=247"
+                  alt="facebook"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/"
+                ><img
+                  class="footerLogo"
+                  src="https://th.bing.com/th/id/OIP.OJe7GvGHkndEWM0ytnxFCQHaHG?w=217&h=208&c=7&r=0&o=5&dpr=1.25&pid=1.7"
+                  alt="instagram"
+              /></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/"
+                ><img
+                  class="footerLogo"
+                  src="https://th.bing.com/th/id/OIP.PSj_SQum7CH01WhmY2kFcAHaHx?w=179&h=187&c=7&r=0&o=5&dpr=1.25&pid=1.7"
+                  alt="twitter"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.google.com/"
+                ><img
+                  class="footerLogo"
+                  src="https://th.bing.com/th/id/OIP.Kg2FF2wpIK_HLyo8Q56ycAHaFj?w=230&h=180&c=7&r=0&o=5&dpr=1.25&pid=1.7"
+                  alt="facebook"
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="right" style="font-size: 12px; margin-top: -40px">
+          <span>@copyRight...</span><br />
+          <p style="padding-bottom: 3px">
+            This document is the exclusive property of Mindtree Limited
+            (Mindtree); the recipient agrees that they may not copy, transmit,
+            use or disclose the confidential and proprietary information in this
+            document by any means without the expressed and written consent of
+            Mindtree.
+          </p>
+        </div>
+      </footer>
+    </div>
+    <script>
+      $("nav ul li.btn span").click(function () {
+        $("nav ul div.items").toggleClass("show");
+        $("nav ul li.btn span").toggleClass("show");
+      });
+    </script>
+  </body>
+</html>
